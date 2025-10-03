@@ -34,37 +34,25 @@ export default function Home() {
       <Nav section={section} setSection={setSection} />
 
       <div ref={homeRef} className="home w-full min-h-screen flex flex-col justify-center px-40">
-        <div className="name text-base text-white">Thanarat Ampanhom ( Poon )</div>
+        <div className="name text-base text-white">Thanarat Ampanhom ( Don )</div>
         <div className="title text-7xl font-bold text-sky-300 drop-shadow-lg">DONKA</div>
         <div className="desc max-w-2/5 text-sky-100 mt-2 bg-white/5 rounded-lg p-4 shadow-lg backdrop-blur-sm">
-          ผมคือ <span className="font-semibold text-sky-300">Dev</span> ที่ถนัดทั้งงานเว็บและงานเกม
+          สวัสดีครับผมชื่อ นาย <span className="font-semibold text-sky-300">ธนะรัชต์ อพันหอม</span> ชื่อเล่น <span className="font-semibold text-sky-300">ดอน</span> อายุ 20 ปี
           <br />
-          รักการเขียนโค้ด สร้างสรรค์สิ่งใหม่ และแก้ปัญหาด้วยเทคโนโลยี
+          ผมชื่นชอบในการเขียนโปรแกรมหรือ Website ตั้งแต่เรียนอยู่มัธยม
           <br />
-          จากประสบการณ์เขียนเว็บและพัฒนาระบบ <span className="font-semibold text-sky-200">FiveM</span> มากกว่า 5 ปี
+          ได้ความรู้มาจากการเรียนตั้งแต่มัธยมเรื่อง Website หลังจากที่เข้าวงการ FiveM
           <br />
-          ทำให้ผมมั่นใจว่าสามารถสร้างผลงานที่ทั้งใช้งานได้จริงและแตกต่างได้เสมอ
+          ก็ศึกษาวิธีเขียนโปรแกรมภาษา LUA ด้วยตัวเองมาตลอด 4 ปี
+          <br />
+          มีการฝึกทักษะอื่นๆควยคู่ตามไปด้วยระหว่างนั้น
+          <br />
+          ปัจจุบันรับงงานเป็น Developer ให้กับ <span className="font-semibold text-sky-300">FiveM Server Made In Thailand</span>
         </div>
       </div>
 
       <div ref={aboutRef} className="about w-full flex flex-col justify-center items-end pt-30 p-40 text-white">
         <div className="title text-7xl font-bold text-sky-300 drop-shadow-lg">ABOUT</div>
-
-        <div className="desc max-w-2/5 text-sky-100 mt-2 bg-white/5 rounded-lg p-4 shadow-lg backdrop-blur-sm">
-          ประสบการณ์ที่เชี่ยวชาญที่สุดในปัจจุบัน
-          <span className="font-semibold text-sky-300 ml-2">FiveM Developer</span>
-        </div>
-        <div className="flex flex-col p-4 items-end">
-          <div> 4Kings สายเลือดอาชีวะ <span className="font-semibold text-sky-300 ml-2">( แนวโรงเรียน )</span> </div>
-          <div> Klongtoei ซีซั่น 2  <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ ) ( เซิฟ Ninjo )</span> </div>
-          <div> Iris City  <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
-          <div> Buffet City <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
-          <div> Matthayom Highschool <span className="font-semibold text-sky-300 ml-2">( แนวโรงเรียน )</span> </div>
-          <div> ดึกดำบรรพ์ Highschool <span className="font-semibold text-sky-300 ml-2">( แนวโรงเรียน )</span> </div>
-          <div> Crazy Ocean World  <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
-          <div> Made In Thailand Tunder <span className="font-semibold text-sky-300 ml-2">( เซิฟเวอร์ X10เล่นเอาสนุก )</span> </div>
-          <div> Made In Thailand 1.0 / Made In Thailand 2.0   <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
-        </div>
 
         <div className="ability w-full flex flex-col justify-center items-center gap-5 mt-30">
           <div className="desc max-w-2/5 text-sky-100 mt-2 bg-white/5 rounded-lg p-4 shadow-lg backdrop-blur-sm">
@@ -125,6 +113,36 @@ export default function Home() {
 
       <div ref={projectsRef} className="projects w-full min-h-screen flex flex-col items-center pt-30 px-40 text-white">
         <div className="title text-7xl font-bold text-sky-300 drop-shadow-lg">PROJECTS</div>
+        <div className='w-full h-full flex flex-col items-end py-10'>
+          <div className="desc max-w-2/5 text-sky-100 mt-2 bg-white/5 rounded-lg p-4 shadow-lg backdrop-blur-sm">
+            ประสบการณ์ที่เชี่ยวชาญที่สุดในปัจจุบัน
+            <span className="font-semibold text-sky-300 ml-2">FiveM Developer</span>
+          </div>
+          <div className="flex flex-col p-4 items-end">
+            <div> 4Kings สายเลือดอาชีวะ <span className="font-semibold text-sky-300 ml-2">( แนวโรงเรียน )</span> </div>
+            <div> Klongtoei ซีซั่น 2  <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ ) ( เซิฟ Ninjo )</span> </div>
+            <div> Iris City  <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
+            <div> Buffet City <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
+            <div> Matthayom Highschool <span className="font-semibold text-sky-300 ml-2">( แนวโรงเรียน )</span> </div>
+            <div> ดึกดำบรรพ์ Highschool <span className="font-semibold text-sky-300 ml-2">( แนวโรงเรียน )</span> </div>
+            <div> Crazy Ocean World  <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
+            <div> Made In Thailand Tunder <span className="font-semibold text-sky-300 ml-2">( เซิฟเวอร์ X10เล่นเอาสนุก )</span> </div>
+            <div> Made In Thailand 1.0 / Made In Thailand 2.0 <span className="font-semibold text-sky-300 ml-2">( แนวโรลเพลย์ )</span> </div>
+            <div> และยังมีสคริปต์ที่ Custom ขึ้นมาเอง <span className="font-semibold text-sky-300 ml-2"> ( มากกว่า 50 ตัว ) </span> </div>
+          </div>
+        </div>
+        <div className='w-full h-full flex flex-col items-start py-10'>
+          <div className="desc max-w-2/5 text-sky-100 mt-2 bg-white/5 rounded-lg p-4 shadow-lg backdrop-blur-sm">
+            ประสบการณ์ที่เคยทำมา
+            <span className="font-semibold text-sky-300 ml-2">Website Developer</span>
+          </div>
+          <div className="flex flex-col p-4 items-start">
+            <div> E-commerce / Shopping Cart / Stocks / Admin Panel <span className="font-semibold text-sky-300 ml-2"> ( เว็บขายสินค้าออนไลน์ ) </span> </div>
+            <div> Pet lovely store <span className="font-semibold text-sky-300 ml-2"> ( เว็บขายสัตว์เลี้ยงออนไลน์ โปรเจคจบมหาลัย ) </span> </div>
+            <div> Music Resume <span className="font-semibold text-sky-300 ml-2"> ( เว็บเรซูเมนักดนตรี ) </span> </div>
+            <div> FiveM Store <span className="font-semibold text-sky-300 ml-2"> ( เว็บขายระบบของเกมส์ FiveM ) </span> </div>
+          </div>
+        </div>
       </div>
 
       <div className="footer w-full h-100 pt-20"></div>
