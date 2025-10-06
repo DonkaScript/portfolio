@@ -21,10 +21,66 @@ input[type=number] {
 
 body {
   user-select: none;
-  overflow-x: hidden;
-  background: rgba(15, 15, 15, 1);
+  /* overflow-x: hidden; */
+  background: #11071F;
+  overflow: scroll;
 }
 
 *::-webkit-scrollbar {
   width: 0;
+}
+
+.image {
+  background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+}
+
+.arrow {
+  background-image: url('../public/arrow.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.works {}
+
+.works .work {
+  background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(105, 59, 147, 0.2) 0%, rgba(110, 191, 244, 0.0447917) 77.08%, rgba(70, 144, 213, 0) 100%);
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(3rem);
+  border-radius: 1rem;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 20%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/Skills.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.skills::after {
+  content: 'Skills';
+  position: absolute;
+  transform: translate(-50%, 50%);
+  bottom: -32%;
+  left: 49.5%;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .skills::before {
+    top: 33%;
+    width: 120%;
+  }
+
+  .skills::after {
+    bottom: -44%;
+  }
 }
