@@ -41,7 +41,7 @@ export default function Home() {
             {/* รูปภาพ */}
             <div className="w-3/4 h-3/4 relative">
               <Image
-                src="/Me.png"
+                src="../public/Me.png"
                 alt="Me"
                 fill
                 style={{ objectFit: 'contain' }}
